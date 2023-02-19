@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 np.random.seed(1234)
 MD = pd.read_csv('mcdonalds.csv')
-# Assuming MD.x is a numpy array or pandas DataFrame containing the data
+
 MD_kms = stepFlexclust(MD.x, k=range(2, 9), nrep=10, verbose=False, method='kmeans')
 
 # Relabel the clusters to ensure consistency across runs
